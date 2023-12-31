@@ -1,0 +1,41 @@
+Ver0.3: fix 默认值错误；
+                添加reserved 寄存器RW类型检查，必须是"-"
+Ver0.4: 添加寄存器命名空格检查;
+                添加位宽格式错误检查： 需要满足类似7,4； 7：4就是错误的。
+               修正寄存器例化名，小写到->大写。
+                添加规则，寄存器名大写；子域寄存器小写。
+
+Ver0.5: 添加docx自动生成，格式见模板，不支持位宽混合模式。
+
+Ver0.6: 添加RALF文件自动生成，用于验证模型。
+               fix bug，0.4 大写引入的命名问题。
+
+Ver0.7: 修改field default 值，用000111格式。 
+        增加python 测试脚本输出。
+
+Ver0.8: 修改寄存器docx 模板，添加交叉应用，reg summury index支持跳转
+        修改输出文件位置，统一到output目录。
+        删除图标ico，避免中文路径错误。
+
+Ver0.9: 添加W1C类型寄存器支持，一个REG有W1C ，就不能有RW, RO类型混用。
+
+Ver0.96: 添加功能-> 支持 xls文件选取sheet 隔断；通过一个sheet.name=”J_STOP_HERE“， 终止sheet添加到reg模型中,
+         添加功能支持 寄存器描述文件中，添加注释行; 关键词=J_COMMIT
+	   请参考jmanager_chipregs.xls，使用注释以及隔断功能。
+
+Ver0.97: 添加功能-> 打开output 文件夹功能；
+         添加default值，hex格式检查；
+	     添加自动创建output子目录
+         修正W1C寄存器，子域可以RO，reserved混合，不能和RW混合
+                 
+Ver0.98: 添加功能-> 支持W1C, RC , W0C 寄存器。添加re读使能接口；           
+         W0C,RC,W0C 寄存器，子域可以RO，reserved混合，不能和RW混合
+         W0C,RC,W0C 寄存器，默认值全0；
+         R0寄存器模块需要接固定值的话，相关固定值在注释中打印可以查看；
+         添加Joulwatt 版权声明
+         
+
+
+
+
+

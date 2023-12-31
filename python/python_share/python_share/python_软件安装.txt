@@ -1,0 +1,4 @@
+1. ch341par.exe驱动；
+2.  pycharm-community-2021.3.1.exe , 推荐这个版本，更高版本有点大，没啥差异；
+3.  python-3.9.13.exe    (32bits， 注意32bits版本，ch341驱动不支持64bits）；
+4. 解压py_pjs.rar目录内容，又两个project，一个pmbus，一个PMIC 类封装例子。
